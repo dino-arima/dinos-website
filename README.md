@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nostalgic Laboratory
 
-## Getting Started
+このサイトは個人ホームページプロジェクト、「Nostalgic Laboratory」です。90年代〜00年代の懐かしい雰囲気を再現しつつ、現代的なWeb技術を活用して制作しています。
 
-First, run the development server:
+## 主なコンテンツ
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **トップページ**  
+  サイトの入口。Web拍手・アクセスカウンター・スクロールメッセージなど、ノスタルジックな要素を盛り込みました。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **作ったもの**  
+  ミニWebアプリなどの公開コーナー。  
+  - [メシガチャ](/meshi/): AIが飲食店を（時々適当な感じで）おすすめします。
+  - [動物語翻訳機](/animalTranslator): 動物画像からAIが「気持ち」を翻訳します。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **リンク集**  
+  相互リンクやバナー置き場など。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 技術スタック
 
-## Learn More
+- Next.js (App Router)
+- TypeScript
+- TailwindCSS
+- Upstash Redis（Web拍手・カウンター用）
+- モダンCSSとちょっぴり古き良きHTML表現
 
-To learn more about Next.js, take a look at the following resources:
+## セットアップ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. このリポジトリをクローン
+2. `.env.local` を用意し、Upstash RedisなどのAPIキーを設定
+3. 依存パッケージをインストール  
+   ```bash
+   npm install
+   ```
+4. 開発サーバーを起動  
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 注意事項
 
-## Deploy on Vercel
+- サイトデザイン、画像類の無断転載や商用利用は禁止です。
+- Web拍手・カウンター機能はUpstash Redisを用いています。無料枠の上限に注意してください。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 免責事項
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+本サイトから発生したいかなる損害も責任を負いかねます。実験サイトとしてのご理解をお願いします。

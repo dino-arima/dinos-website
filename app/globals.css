@@ -46,3 +46,32 @@
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
+@keyframes rainbow-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+.rainbow-text-animated {
+  /* 虹色のグラデーション（開始と終了を同じ色にする） */
+  background: linear-gradient(
+    to right,
+    #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff, #ff0000
+  );
+  /* 背景を大きくして動かせるようにする */
+  background-size: 200% auto;
+  /* 背景を文字で切り抜く */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* 本来の文字色を透明にする */
+  color: transparent;
+  /* アニメーションの適用（3秒で1周、無限ループ） */
+  animation: rainbow-flow 3s linear infinite;
+  
+  /* 視認性を上げるための黒い影（当時の必須テク） */
+  filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.8));
+  font-weight: 900;
+}

@@ -42,7 +42,7 @@ export default async function TopPage() {
     
               {/* About */}
               <div className="text-base text-gray-300 text-center bg-[#232530] p-6 border-2 border-dashed border-[#0080FF] rounded-lg shadow-lg max-w-xl mx-auto">
-                <h2 className="text-2xl font-extrabold text-[#0080FF] mb-2 tracking-wide drop-shadow-sm">About</h2>
+                <h2 className="text-2xl font-extrabold mb-2 tracking-wide  rainbow-text-animated">About</h2>
                 <p className="bg-opacity-20 rounded-md p-4 font-medium leading-relaxed shadow-inner">
                   <span className="font-bold">このホームページはDinoによって作成されています。</span>
                   <br />
@@ -116,8 +116,10 @@ export default async function TopPage() {
                     メシガチャ
                   </a>
                     <img src="/icon/New.gif" alt="New" style={{display: "inline-block"}}/><br />
-                  <p>いくつかの質問に答えたらAIが飲食店をおすすめしてくれるWebアプリです。<br />
-                  結構な確率で実在しないお店も紹介してきます。ご了承ください。</p>
+                  <p>
+                    いくつかの質問に答えたらAIが飲食店をおすすめしてくれるWebアプリです。<br />
+                    結構な確率で実在しないお店も紹介してきます。ご注意ください。
+                  </p>
                 </li>
                 <li>
                   <a href="/animalTranslator" className="font-bold text-lg">
@@ -126,7 +128,7 @@ export default async function TopPage() {
                   </a><br />
                   <p>動物の画像をアップロードするとAIが気持ちを翻訳（笑）してくれるWebアプリです。<br />
                   注意：時間帯によっては引くほど生成が遅かったり、更に酷いと全然成功しないこともあります。<br />
-                  APIの利用回数上限の関係で<span className="text-red-500">1人3枚</span>くらいまでにしていただけると助かりますm(__)m</p>
+                  お願い：APIの利用回数上限の関係で<span className="text-red-500">1人3枚</span>くらいまでにしていただけると助かりますm(__)m</p>
                 </li>
               </ul>
             </section>

@@ -51,7 +51,9 @@ export default async function TopPage() {
               </div>
             </section>
     
-            <nav className="w-full flex flex-col items-center mb-14">
+            <hr className="w-full py-4" />
+
+            <nav className="w-full flex flex-col items-center pb-8">
               <div className="flex flex-wrap justify-center gap-6">
                 <a
                   href="#news"
@@ -85,12 +87,14 @@ export default async function TopPage() {
               </div>
             </nav>
     
+            <hr className="w-full py-4" />
+
             {/* 新着情報 */}
             <section id="news" className="w-full rounded border-2 border-dotted border-[#0099cc] mb-8 bg-[#222834] p-4">
               <h2 className="text-lg font-bold text-[#0099cc] mb-2">
                 ■ News
               </h2>
-              <ul className="pl-5 list-disc space-y-1 text-gray-100">
+              <ul className="pl-5 list-disc space-y-1 text-white">
                 <li>2026/05/10 ホームページ開設！</li>
               </ul>
             </section>
@@ -99,10 +103,16 @@ export default async function TopPage() {
               <h2 className="text-lg font-bold text-[#ff6699] mb-2">
                 ■ Plofile
               </h2>
-              <p className="text-gray-100">
-                管理人：Dino<br />
-                好きなもの：犬、レトロゲーム、Webデザイン、筋トレ<br />
-                ひとこと：あなたもホームページを作ってみませんか？
+              <p className="text-white">
+                管理人：<br />Dino<br />
+              </p>
+              <hr className="mt-8 mb-8"/>
+              <p className="text-white">
+                好きなもの：<br />犬<br />もすかう<br />Lhaplus<br />BMS<br />
+              </p>
+              <hr className="mt-8 mb-8"/>
+              <p className="text-white">
+                ひとこと：<br />あなたは　好きですか？
               </p>
             </section>
             {/* 作ったもの */}
@@ -139,14 +149,20 @@ export default async function TopPage() {
               </h2>
               <ul className="pl-5 list-disc space-y-1 text-gray-100">
                 <li>
-                  <img src="/icon/banner.gif" alt="banner" style={{display: "inline-block"}} />
-                  相互リンク募集中！
+                  このページはリンクフリーです。相互リンク歓迎！
                 </li>
                 <li>
-                  バナーの直リンク禁止！
+                  バナーは以下のものをお使いください。直リンク厳禁！
                 </li>
               </ul>
+              <div className="pt-4 flex items-center justify-center">
+                <img src="/icon/banner.gif" alt="banner" style={{display: "inline-block"}} />
+              </div>
+                
             </section>
+            
+            <hr className="w-full py-4" />
+
             <div className="w-full flex flex-col flex-1 items-center justify-center">
               <ClapButton />
             </div>

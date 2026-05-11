@@ -6,7 +6,7 @@ const redis = Redis.fromEnv()
 
 
 export default async function AccessCounter () {
-  // 数字を 1 増やす (INCR) - カウンターに最適！
+  // 数字を 1 増やす (INCR) 
   await redis.incr("visitor_count");
   // データを取得する (GET)
   const data = await redis.get("visitor_count");
